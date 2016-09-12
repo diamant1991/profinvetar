@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Каталог с фильтром</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper container">
+    <header class="header">
+    	<div class="top-panel">
+    		<div class="logo">
+    			<a href="#">
+    				<img src="img/logo.png" alt="">
+    			</a>
+    		</div>
+    		<div class="logo-text">
+    			УБорочная техника, оборудование и инвентарь для клининга
+    		</div>
+    		<div class="phones">
+    			<span class="phone_wrap">
+    				<span class="phone">
+    					<span class="icons fa fa-phone"></span>
+    					<span class="phone_text">
+    						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
+    						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														
+    					</span>
+    				</span>
+    				<span class="header__time middle">
+    					<div class="time-info">c 9:00 до 18:00 ПН-ПТ</div>
+    					<a href="#" class="get-call">Заказать звонок</a>
+    				</span>
+    			</span>
+    		</div>
+    	</div>
+    	<div class="bottom-panel">
+    		<div class="header__mail">
+    			<div class="input-group"> 
+    				<span class="input-group-addon">
+    					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+    				</span> 
+    				<input class="form-control" placeholder="info@profinventar.ru"> 
+    			</div>
+    		</div>
+    		<div class="search">
+    				<div id="title-search" class="stitle_form">
+    				<form action="">
+    					<div class="form-control1 bg">
+    						<input id="title-searchs-input" type="text" name="q" value="" class="search__input small_block" placeholder="Быстрый поиск по каталогу">
+    						<input name="s" type="submit" value="" class="search__submit">
+    					</div>
+    				</form>
+    			</div>
+    		</div>
+    		<div class="header__compare">
+    			<a href="#" class="header-btn">
+    				<i></i>
+    				<div>Сравнение</div>
+    			</a>
+    		</div>
+    		<div class="header__favorites">
+    			<a href="#" class="header-btn">
+    				<div class="favorites-icon">
+    					<i class="fa fa-heart-o" aria-hidden="true"></i>
+    					<span class="favorites-count">2</span>
+    				</div>
+    				<div>Изранное</div>
+    			</a>
+    		</div>
+    		<div class="header__basket">
+    			<a href="#" class="basket-btn">
+    				<span class="middle">
+    					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    				</span>
+    				<span class="middle basket-text">
+    					Ваша корзина (0)
+    				</span>
+    			</a>
+    		</div>
+    	</div>
+    </header>
+    <nav class="nav">
+    	<ul class="nav__menu">
+    		<li><a href="#">Главная</a></li>
+    		<li><a href="#">О компании</a></li>
+    		<li><a href="#">Доставка</a></li>
+    		<li><a href="#">Оплата</a></li>
+    		<li><a href="#">Прайс</a></li>
+    		<li><a href="#">Клининг</a></li>
+    		<li><a href="#">Статьи</a></li>
+    		<li><a href="#">Контакты</a></li>
+    	</ul>
+    </nav>
+    <div class="wrapper__inner clearfix">
+      <aside class="sidebar">
+        <ul class="sidebar__menu">
+          <li>
+            <a href="#">
+              <span class="table-cell cat-icon">
+                <img src="img/inventar.png" alt="Уборочный инвентарь" title="Уборочный инвентарь">
+              </span>
+              <span class="table-cell">Уборочный инвентарь</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="table-cell cat-icon">
+                <img src="img/oborudovanie.png" alt="Уборочное оборудование" title="Уборочное оборудование">
+              </span>
+              <span class="table-cell">Уборочное оборудование</span>
+            </a>
+          </li>
+        </ul>
+        <div class="subscribe_wrap">
+          <div class="subscribe-form" id="subscribe-form">
+            <div class="wrap_bg">
+              <div class="top_block box-sizing">
+                <div class="text">
+                  <div class="title">Будьте всегда в курсе!</div>
+                  <div class="more">Узнавайте о скидках и акциях первым</div>
+                </div>
+              </div>
+              <form class="sform box-sizing">
+                <div class="email_wrap">
+                  <input type="email" class="input-item" value="" placeholder="Ваш e-mail">
+                  <input type="submit" name="OK" class="button send_btn" value="">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="news_blocks front">
+          <div class="top_block">
+            <div class="title_block">Новости</div>
+            <a href="#">Все новости</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="info_block">
+            <div class="news_items">
+              <div class="item box-sizing dl">
+                <div class="info">
+                  <div class="date">5 Июня 2016</div>
+                  <a class="name dark_link" href="#">Новое восприятие мира от Google</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="info">
+                  <div class="date">1 Мая 2016</div>
+                  <a class="name dark_link" href="#">Переводчик с кошачьего – это реально</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="info">
+                  <div class="date">1 Мая 2016</div>
+                  <a class="name dark_link" href="#">Переводчик с кошачьего – это реально</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news_blocks front">
+          <div class="top_block">
+            <div class="title_block">Статьи</div>
+            <a href="/info/articles/">Все статьи</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="info_block">
+            <div class="news_items">
+              <div class="item box-sizing dl">
+                <div class="image">
+                  <a href="#">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <a class="name dark_link" href="#">Обзор 10 лучших велосипедных брендов</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="image">
+                  <a href="#">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <a class="name dark_link" href="#">Обзор 10 лучших велосипедных брендов</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="image">
+                  <a href="#">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <a class="name dark_link" href="#">Обзор 10 лучших велосипедных брендов</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- end sidebar -->
+      <div class="center-content">
+        <div class="breadcrumb">
+          <a href="#" title="Главная">
+            <span>Главная</span>
+          </a>
+          <span class="separator">-</span>
+          <a href="#"  title="Каталог">
+            <span>Каталог</span>
+          </a>
+          <span class="separator">-</span>
+          <a href="#">
+            Поломоечные машины
+          </a>
+        </div>
+        <h2>Поломоечные машины</h2>
+        <div class="item-title mrg-bot-10">Категории:</div>
+        <div class="category">
+          <a href="#" class="category__item">
+            Категория 1 (20 шт.)
+          </a>
+          <a href="#" class="category__item">
+            Категория 2 (20 шт.)
+          </a>
+          <a href="#" class="category__item">
+            Категория 3 (20 шт.)
+          </a>
+          <a href="#" class="category__item">
+            Категория 4 (20 шт.)
+          </a>
+          <a href="#" class="category__item">
+            Категория 5 (20 шт.)
+          </a>
+        </div>
+        <div class="filter">
+          <div class="filter__item clearfix">
+            <div class="col-md-2">
+              <div class="filter__title filter__title-check">
+                <b>Производитель:</b>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="filter__content">
+                <div class="filter__checkbox middle">
+                  <input type="checkbox" id="check1" class="middle">
+                  <label for="check1" class="label-checkbox middle">Производитель 1</label>
+                </div>
+                <div class="filter__checkbox middle">
+                  <input type="checkbox" id="check2" class="middle">
+                  <label for="check2" class="label-checkbox middle">Производитель 2</label>
+                </div>
+                <div class="filter__checkbox middle">
+                  <input type="checkbox" id="check3" class="middle">
+                  <label for="check3" class="label-checkbox middle">Производитель 3</label>
+                </div>
+                <div class="filter__checkbox middle">
+                  <input type="checkbox" id="check4" class="middle">
+                  <label for="check4" class="label-checkbox middle">Производитель 4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter__item clearfix">
+            <div class="col-md-2">
+              <div class="filter__title filter__title-range">
+                <b>Цена:</b>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="slider-range-block">
+                <div class="slider-range"></div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="range-input">
+                <span class="range-dollar">от</span>
+                <input type="text" value="0" class="filter-range-input minCost middle">
+                <span class="range-dollar">до</span>
+                <input type="text" value="15000" class="filter-range-input maxCost middle">
+              </div>
+            </div>
+          </div>
+          <div class="filter__item clearfix">
+            <div class="pull-left">
+              <div class="sorting">
+                Сортировать по:
+                <a href="#" class="sorting__item">цене</a>
+                <a href="#" class="sorting__item">названию</a>
+              </div>
+            </div>
+            <div class="pull-right">
+              <a href="#" class="filter-btn">применить фильтр</a>
+            </div>
+          </div>
+        </div>
+        <!-- end filter -->
+        <div class="hits-wrapp clearfix">
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="hits-item catalog-item">
+                  <div class="inner_wrap">
+                    <div class="item_info">
+                      <div class="hits-title" style="height: 40px;">
+                        <a href="/catalog/odezhda/zhenskaya_odezhda/3076/"><span>Футболка женская Nike Futura Line Shine</span></a>
+                      </div>             
+                    </div>
+                    <div class="image_wrapper_block">
+                      <div class="hits-img">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <a href="#" class="thumb">               
+                              <img border="0" src="https://placehold.it/170x170" alt="Футболка женская Nike Futura Line Shine" title="Футболка женская Nike Futura Line Shine">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-price">
+                      <span class="catalog-price__item middle">31231 р.</span>
+                      <a href="#" class="add-basket middle">В корзину</a>
+                    </div>
+                    <div class="catalog-item-preview-text" itemprop="description">
+                      <div class="catalog-list">
+                        <li>
+                          <b>Артикул:</b>
+                          <span>45346</span>
+                        </li>
+                        <li>
+                          <b>Вес:</b>
+                          <span>45346</span>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-more">
+            <a href="#">показать еще</a>
+          </div>
+          <div class="item-block text-block">
+            <h2>Заголовок h2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasi neque aperiam maxime nemo omnis possimus vel iure. Magni modi, saepe ad reiciendis sapiente molestiae consectetur, laboriosam ipsam, suscipit dolor, aperiam. Sed, quidem <a href="#">placeat</a> possimus <a href="#">molestiae</a> maiores a nulla, quas beatae amet ipsum ab architecto. Numquam qui esse earum ipsum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsam, ut tempore impedit nesciunt harum voluptas quia beatae fugit itaque eos odio libero accusamus aliquid ducimus, maxime, corporis explicabo, numquam nemo necessitatibus consectetur id repellendus atque ipsum dicta. Numquam at voluptatum illo provident autem quam alias beatae unde, aperiam ab reiciendis, quo nam consequuntur praesentium optio quas dolor, deleniti, corrupti a quis ea architecto saepe doloremque asperiores sint! Fugit sint cumque, ex laudantium suscipit ad optio? Debitis architecto ad nemo, fuga veniam? Quaerat modi doloremque officia facilis facere, natus, ea suscipit. Nesciunt ad tempora quod similique pariatur quos possimus atque!
+            </p>
+            <h3>Заголовок h3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasi neque aperiam maxime nemo omnis possimus vel iure. Magni modi, saepe ad reiciendis sapiente molestiae consectetur, laboriosam ipsam, suscipit dolor, aperiam. Sed, quidem <a href="#">placeat</a> possimus <a href="#">molestiae</a> maiores a nulla, quas beatae amet ipsum ab architecto. Numquam qui esse earum ipsum.
+            </p>
+            <h4>Заголовок h4</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasi neque aperiam maxime nemo omnis possimus vel iure. Magni modi, saepe ad reiciendis sapiente molestiae consectetur, laboriosam ipsam, suscipit dolor, aperiam. Sed, quidem <a href="#">placeat</a> possimus <a href="#">molestiae</a> maiores a nulla, quas beatae amet ipsum ab architecto. Numquam qui esse earum ipsum.
+            </p>
+            <h5>Заголовок h5</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quasi neque aperiam maxime nemo omnis possimus vel iure. Magni modi, saepe ad reiciendis sapiente molestiae consectetur, laboriosam ipsam, suscipit dolor, aperiam. Sed, quidem <a href="#">placeat</a> possimus <a href="#">molestiae</a> maiores a nulla, quas beatae amet ipsum ab architecto. Numquam qui esse earum ipsum.
+            </p>
+            <p>
+              <b>Жырный текст</b>
+            </p>
+            <p>
+              <i>Курсив</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="review">
+      <div class="item-title item-title_center">
+        Отзывы о компании "Профинвентарь"
+      </div>
+      <div class="owl-carousel owl-theme review-carousel" id="review-carousel">
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer class="footer">
+  	<div class="container">
+  		<div class="row">
+  			<div class="footer-wrapp">
+  				<div class="footer-logo">
+  					<a href="#">
+  						<img src="img/logo.png" alt="">
+  					</a>
+  					<span class="pay_system_icons">
+  						<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
+  						<i alt="Visa" title="Visa" class="visa"></i>
+  						<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
+  						<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
+  						<i alt="Qiwi" title="Qiwi" class="qiwi"></i>
+  					</span>
+  				</div>
+  				<div class="footer-item">
+  					<h5><b>Компания</b></h5>
+  					<ul class="footer-menu">
+  						<li><a href="#">Список 1</a></li>
+  						<li><a href="#">Список 2</a></li>
+  						<li><a href="#">Список 3</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-item">
+  					<h5><b>Информация</b></h5>
+  					<ul class="footer-menu">
+  						<li><a href="#">Список 1</a></li>
+  						<li><a href="#">Список 2</a></li>
+  						<li><a href="#">Список 3</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-item">
+  					<h5><b>Помощь</b></h5>
+  					<ul class="footer-menu">
+  						<li><a href="#">Список 1</a></li>
+  						<li><a href="#">Список 2</a></li>
+  						<li><a href="#">Список 3</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-tel">
+  					<div class="phones">
+  						<div class="phone_wrap">
+  							<div class="phone">
+  		  					<div class="icons fa fa-phone"></div>
+  		  					<div class="phone_text">
+  		  						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
+  		  						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														
+  		  					</div>
+  		  				</div>
+  						</div>
+  						<div class="footer-call">
+  							<a href="#" class="get-call">Заказать звонок</a>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </footer>
+  
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -2327,3 +2327,28 @@ body .stickers .sticker_hit:before {
 
 .view-more {
   margin-bottom: 20px; }
+
+.thumbnail {
+  margin-left: -15px;
+  padding-top: 10px; }
+  .thumbnail__item {
+    padding-left: 15px;
+    float: left;
+    display: block; }
+    .thumbnail__item.active .thumbnail__img {
+      border-color: #67af00; }
+  .thumbnail__img {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border: 2px solid transparent; }
+
+.card-slider {
+  padding-right: 10px; }
+
+.card-info {
+  padding-left: 10px; }
+  .card-info__item {
+    margin-bottom: 20px; }

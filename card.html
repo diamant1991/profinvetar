@@ -319,28 +319,380 @@
                 </div>
               </div>
               <div class="card-info__item">
-                <a href="#" class="middle cheaper-price">Знаю где цена дешевле!</a>
+                <a href="#" class="add-compare middle">Добавить в избранное</a>
+                <a href="#" class="compare-btn middle">Сравнить товар</a>
+              </div>
+              <div class="card-info__item">
+                <a href="#" class="middle cheaper-price" data-toggle="modal" data-target="#modal">Знаю где цена дешевле!</a>
               </div>
             </div>
           </div>
         </div>
         <div class="tabs_section">
           <ul class="tab-list clearfix">
-            <li class="active">
+            <li class="active" onclick="opcl(tab,'#description'); return false;">
               <span>Описание</span>
             </li>
-            <li class="">
+            <li onclick="opcl(tab,'#char'); return false;">
               <span>Характеристики</span>
             </li>
-            <li class="">
+            <li onclick="opcl(tab,'#review'); return false;">
               <span>Отзывы</span>
               <span class="count empty">&nbsp; (1)</span>
             </li>
           </ul>
           <div class="tabs-body">
-            <div id="description"></div>
-            <div id="char"></div>
-            <div id="review"></div>
+            <div id="description">
+              <h4>Заголовок</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quae. Dolores, odit! Libero magni architecto unde doloribus quaerat aperiam asperiores tempora consectetur officia pariatur et distinctio velit a numquam quia expedita, ipsam sequi sint iusto. Quis sit pariatur, vero nemo rerum ullam unde. Cumque voluptas, laborum magnam fugit! Libero, vero.</p>
+              <h4><b>Заголовок</b></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex est mollitia iste, ad nisi rem ipsam recusandae doloremque. Numquam, possimus eius voluptatibus, totam fuga ducimus quod blanditiis reprehenderit ea eligendi quos a doloribus sint voluptates, iure quaerat veritatis cumque eveniet perspiciatis vel perferendis vero! Quaerat sed quasi quae nobis, debitis praesentium odit aut facere quidem corporis! Dolor excepturi, aliquid alias perspiciatis! Explicabo quasi a numquam labore reprehenderit temporibus aliquid, cum voluptatibus quis quia eos id ipsam similique pariatur, consequuntur dolorum, aliquam dolorem quae excepturi nisi. Modi officiis eius odio illo nemo ab minima, aliquam corrupti praesentium voluptatem, commodi magni, mollitia!</p>
+              <h4>Заголовок</h4>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Типа машины</td>
+                    <td>Сетевая</td>
+                  </tr>
+                  <tr>
+                    <td>Типа машины</td>
+                    <td>Сетевая</td>
+                  </tr>
+                  <tr>
+                    <td>Типа машины</td>
+                    <td>Сетевая</td>
+                  </tr>
+                  <tr>
+                    <td>Типа машины</td>
+                    <td>Сетевая</td>
+                  </tr>
+                  <tr>
+                    <td>Типа машины</td>
+                    <td>Сетевая</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="char">
+              <table class="props_list">
+                <tbody>
+                  <tr>
+                    <td class="char_name">
+                      <span>Вес, кг</span>
+                    </td>
+                    <td class="char_value">
+                      <span>
+                        3.25                                              
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="review">
+              <div class="reviews-block-container reviews-reviews-block-container">
+                <div class="reviews-block-outer">
+                  <div class="reviews-block-inner">
+                    <table cellspacing="0" border="0" class="reviews-post-table reviews-post-first reviews-post-last reviews-post-odd " bx-author-id="0" bx-author-name="Guest" id="message75">
+                      <thead>
+                        <tr>
+                          <td>
+                            <div>
+                              <b class="name">Guest</b>
+                              <span class="message-post-date">13.09.2016 11:48:23</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="reviews-text" id="message_text_75">
+                              <img src="img/bx_smile_biggrin.png" border="0" data-code=":D" data-definition="UHD" alt=":D" width="20" height="20" title="Широкая улыбка" class="bx-smile">
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="reviews-actions">
+                          <td>
+                          <div class="reviews-post-reply-buttons"><noindex>
+                            <a href="#review_anchor" style="margin-left:0;" title="Имя" class="reviews-button-small" bx-act="reply">Имя</a>
+                              <span class="separator"></span>
+                              <a href="#review_anchor" title="Для вставки цитаты в форму ответа выделите ее и нажмите сюда" class="reviews-button-small" bx-act="quote">Цитировать</a>    </noindex></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>    
+                  </div>
+                </div>
+                <span class="reviews-collapse-link middle">
+                  <i></i>
+                  <span>Оставить отзыв</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end tab -->
+        <div class="similar-product clearfix">
+          <h4><b>Похожие товары</b></h4>
+          <div class="similar-wrapp clearfix">
+            <div class="col-md-4">
+              <div class="row similar-item">
+                <div class="similar-block">
+                  <div class="similar-img">
+                    <a href="#">
+                      <img src="https://placehold.it/75x56" alt="">
+                    </a>
+                  </div>
+                  <div class="similar-info">
+                    <p class="similar-title">
+                      <a href="#">
+                        <span>Мешок для мусора ПВД 180л. 50мкм. (25шт. рулон)</span>
+                      </a>
+                    </p>
+                    <p class="similar-desc">
+                      <span>
+                         Производство:Россия <br>
+                         Характеристики:ПВД 25 шт. рулон, 50 мкм. <br>
+                        Габариты:180 л. 90х110см. 
+                      </span>
+                      <span class="similar-desc-overlay"></span>
+                    </p>
+                    <p class="similar-price">
+                      <span>
+                        <span itemprop="price">130.0 Р</span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row similar-item">
+                <div class="similar-block">
+                  <div class="similar-img">
+                    <a href="#">
+                      <img src="https://placehold.it/75x56" alt="">
+                    </a>
+                  </div>
+                  <div class="similar-info">
+                    <p class="similar-title">
+                      <a href="#">
+                        <span>Мешок для мусора ПВД 180л. 50мкм. (25шт. рулон)</span>
+                      </a>
+                    </p>
+                    <p class="similar-desc">
+                      <span>
+                         Производство:Россия <br>
+                         Характеристики:ПВД 25 шт. рулон, 50 мкм. <br>
+                        Габариты:180 л. 90х110см. 
+                      </span>
+                      <span class="similar-desc-overlay"></span>
+                    </p>
+                    <p class="similar-price">
+                      <span>
+                        <span itemprop="price">130.0 Р</span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row similar-item">
+                <div class="similar-block">
+                  <div class="similar-img">
+                    <a href="#">
+                      <img src="https://placehold.it/75x56" alt="">
+                    </a>
+                  </div>
+                  <div class="similar-info">
+                    <p class="similar-title">
+                      <a href="#">
+                        <span>Мешок для мусора ПВД 180л. 50мкм. (25шт. рулон)</span>
+                      </a>
+                    </p>
+                    <p class="similar-desc">
+                      <span>
+                         Производство:Россия <br>
+                         Характеристики:ПВД 25 шт. рулон, 50 мкм. <br>
+                        Габариты:180 л. 90х110см. 
+                      </span>
+                      <span class="similar-desc-overlay"></span>
+                    </p>
+                    <p class="similar-price">
+                      <span>
+                        <span itemprop="price">130.0 Р</span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- similar product -->
+      </div>
+    </div>
+    <div class="review">
+      <div class="item-title item-title_center">
+        Отзывы о компании "Профинвентарь"
+      </div>
+      <div class="owl-carousel owl-theme review-carousel" id="review-carousel">
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="review-header clearfix">
+            <div class="review-name pull-left">
+              <b>Виктор</b>
+            </div>
+            <div class="review-date pull-right">
+              Москва, 24 сентябрь 2016
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="rating">
+              <div class="iblock-vote small" id="vote_3076">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td><div class="star-active star-voted" title="1"></div></td>
+                      <td><div class="star-active star-voted" title="2"></div></td>
+                      <td><div class="star-active star-voted" title="3"></div></td>
+                      <td><div class="star-active star-voted" title="4"></div></td>
+                      <td><div class="star-active star-voted" title="5"></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="review-text">
+              <b>Сумма заказа:</b> менее 50 000 руб
+            </div>
+            <div class="review-text">
+              <b>Недостатки:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Достоинства:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem.
+            </div>
+            <div class="review-text">
+              <b>Комментарий:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, fugiat nihil in tempora illum dolore voluptates dolorem harum neque. Voluptate maxime sint tempora dolore nobis. Asperiores obcaecati id nemo et!
+            </div>
           </div>
         </div>
       </div>
@@ -406,6 +758,35 @@
   		</div>
   	</div>
   </footer>
+
+  <div class="modal fade" id="modal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <div class="label-input">Имя</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="label-input">Телефон</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="label-input">Ссылка на товар с более дешевой ценой</div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Отправить" class="submit-btn">
+            </div>
+          </form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
   
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

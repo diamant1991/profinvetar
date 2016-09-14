@@ -281,25 +281,66 @@
                 </p>
               </div>
               <div class="card-info__item">
+                <div class="card-status">
+                  <span class="middle status-green">В наличии</span>
+                  <span class="middle status-red">Ожидается</span>
+                </div>
+              </div>
+              <div class="card-info__item">
+                <h4><b>Доставка</b></h4>
+                <ul class="delivery-list">
+                  <li>
+                    Курьерская доставка - 
+                    <span class="orange-color">Бесплатно</span>
+                  </li>
+                  <li>
+                    Самовывоз - 
+                    <span class="orange-color">(1-2 дня)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-info__item">
                 <div class="buy_block">
                   <div class="counter_wrapp">
-                    <div class="counter_block big_basket">
+                    <div class="counter_block big_basket middle">
                       <span class="minus">-</span>
                       <input type="text" class="text" name="quantity" value="1">
                       <span class="plus">+</span>
                     </div>
-                    <div class="button_block ">
-                      <a href="#">
+                    <div class="button_block middle">
+                      <a href="#" class="card-add-basket middle">
                         В корзину
                       </a>
                     </div>
-                  </div>
-                  <div class="wrapp_one_click">
-                    <a href="#">Купить в 1 клик</a>
+                    <div class="wrapp_one_click middle">
+                      <a href="#" class="card-one-click">Купить в 1 клик</a>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="card-info__item">
+                <a href="#" class="middle cheaper-price">Знаю где цена дешевле!</a>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="tabs_section">
+          <ul class="tab-list clearfix">
+            <li class="active">
+              <span>Описание</span>
+            </li>
+            <li class="">
+              <span>Характеристики</span>
+            </li>
+            <li class="">
+              <span>Отзывы</span>
+              <span class="count empty">&nbsp; (1)</span>
+            </li>
+          </ul>
+          <div class="tabs-body">
+            <div id="description"></div>
+            <div id="char"></div>
+            <div id="review"></div>
           </div>
         </div>
       </div>

@@ -23,13 +23,13 @@
     				<img src="img/logo.png" alt="">
     			</a>
     		</div>
-    		<div class="logo-text">
+    		<div class="logo-text hidden-sm">
     			УБорочная техника, оборудование и инвентарь для клининга
     		</div>
     		<div class="phones">
     			<span class="phone_wrap">
     				<span class="phone">
-    					<span class="icons fa fa-phone"></span>
+    					<span class="icons fa fa-phone hidden-xs"></span>
     					<span class="phone_text">
     						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
     						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														
@@ -43,7 +43,7 @@
     		</div>
     	</div>
     	<div class="bottom-panel">
-    		<div class="header__mail">
+    		<div class="header__mail hidden-xs">
     			<div class="input-group"> 
     				<span class="input-group-addon">
     					<i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -51,7 +51,7 @@
     				<input class="form-control" placeholder="info@profinventar.ru"> 
     			</div>
     		</div>
-    		<div class="search">
+    		<div class="search hidden-xs">
     				<div id="title-search" class="stitle_form">
     				<form action="">
     					<div class="form-control1 bg">
@@ -63,7 +63,7 @@
     		</div>
     		<div class="header__compare">
     			<a href="#" class="header-btn">
-    				<i></i>
+    				<i class="compare-icon"></i>
     				<div>Сравнение</div>
     			</a>
     		</div>
@@ -82,14 +82,23 @@
     					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
     				</span>
     				<span class="middle basket-text">
-    					Ваша корзина (0)
+    					<span class="hidden-sm">Ваша корзина</span> 
+    					(0)
     				</span>
     			</a>
     		</div>
     	</div>
     </header>
-    <nav class="nav">
-    	<ul class="nav__menu">
+    <nav class="nav clearfix">
+    	<button class="navbar-toggle visible-xs" type="button">
+    		<div class="navbar-toggle__text pull-left">Меню</div> 
+    		<div class="navbar-toggle__icon pull-right">	
+    			<span class="icon-bar"></span> 
+    			<span class="icon-bar"></span> 
+    			<span class="icon-bar"></span> 
+    		</div>
+    	</button>
+    	<ul class="nav__menu flex hidden-xs" id="menu">
     		<li><a href="#">Главная</a></li>
     		<li><a href="#">О компании</a></li>
     		<li><a href="#">Доставка</a></li>
@@ -100,8 +109,23 @@
     		<li><a href="#">Контакты</a></li>
     	</ul>
     </nav>
+    
+    <nav class="nav mobile-catalog visible-sm clearfix">
+    	<button class="navbar-toggle" type="button">
+    		<div class="navbar-toggle__text pull-left">Каталог</div> 
+    		<div class="navbar-toggle__icon pull-right">	
+    			<span class="icon-bar"></span> 
+    			<span class="icon-bar"></span> 
+    			<span class="icon-bar"></span> 
+    		</div>
+    	</button>
+    	<ul class="nav__menu hidden-sm" id="catalog">
+    		<li><a href="#">Уборочный инвентарь</a></li>
+    		<li><a href="#">Уборочное оборудование</a></li>
+    	</ul>
+    </nav>
     <div class="wrapper__inner clearfix">
-      <aside class="sidebar">
+      <aside class="sidebar hidden-sm">
         <ul class="sidebar__menu">
           <li>
             <a href="#">
@@ -228,7 +252,7 @@
         </div>
         <div class="item-title">Каталог</div>
         <div class="inner-catalog clearfix">
-          <div class="col-md-4 inner-catalog__item">
+          <div class="col-md-4 col-sm-4 col-xs-6 inner-catalog__item">
             <div class="row">
               <div class="inner-catalog__img">
                 <img src="https://placehold.it/300x200" alt="">
@@ -260,7 +284,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 inner-catalog__item">
+          <div class="col-md-4 col-sm-4 col-xs-6 inner-catalog__item">
             <div class="row">
               <div class="inner-catalog__img">
                 <img src="https://placehold.it/300x200" alt="">
@@ -292,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 inner-catalog__item">
+          <div class="col-md-4 col-sm-4 col-xs-6 inner-catalog__item">
             <div class="row">
               <div class="inner-catalog__img">
                 <img src="https://placehold.it/300x200" alt="">
@@ -318,39 +342,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 inner-catalog__item">
-            <div class="row">
-              <div class="inner-catalog__img">
-                <img src="https://placehold.it/300x200" alt="">
-              </div>
-              <div class="inner-catalog__descr">
-                <div class="inner-catalog__name">
-                  <a href="#">Пылесосы</a>
-                </div>
-                <ul class="inner-catalog__list">
-                  <li>
-                    <a href="#">Пункт 1</a>
-                  </li>
-                  <li>
-                    <a href="#">Пункт 2</a>
-                  </li>
-                  <li>
-                    <a href="#">Пункт 3</a>
-                  </li>
-                  <li>
-                    <a href="#">Пункт 4</a>
-                  </li>
-                  <li>
-                    <a href="#">Пункт 5</a>
-                  </li>
-                  <li>
-                    <a href="#">Пункт 6</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 inner-catalog__item">
+          <div class="col-md-4 col-sm-4 col-xs-6 inner-catalog__item">
             <div class="row">
               <div class="inner-catalog__img">
                 <img src="https://placehold.it/300x200" alt="">
@@ -382,7 +374,39 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 inner-catalog__item">
+          <div class="col-md-4 col-sm-4 col-xs-6 inner-catalog__item">
+            <div class="row">
+              <div class="inner-catalog__img">
+                <img src="https://placehold.it/300x200" alt="">
+              </div>
+              <div class="inner-catalog__descr">
+                <div class="inner-catalog__name">
+                  <a href="#">Пылесосы</a>
+                </div>
+                <ul class="inner-catalog__list">
+                  <li>
+                    <a href="#">Пункт 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Пункт 2</a>
+                  </li>
+                  <li>
+                    <a href="#">Пункт 3</a>
+                  </li>
+                  <li>
+                    <a href="#">Пункт 4</a>
+                  </li>
+                  <li>
+                    <a href="#">Пункт 5</a>
+                  </li>
+                  <li>
+                    <a href="#">Пункт 6</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 inner-catalog__item">
             <div class="row">
               <div class="inner-catalog__img">
                 <img src="https://placehold.it/300x200" alt="">
@@ -626,7 +650,7 @@
   					<div class="phones">
   						<div class="phone_wrap">
   							<div class="phone">
-  		  					<div class="icons fa fa-phone"></div>
+  		  					<div class="icons fa fa-phone hidden-xs"></div>
   		  					<div class="phone_text">
   		  						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
   		  						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														

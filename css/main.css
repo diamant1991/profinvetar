@@ -1340,29 +1340,7 @@ img {
     list-style-type: none;
     font-size: 0;
     line-height: 0;
-    zoom: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -moz-box-orient: horizontal;
-    -moz-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start; }
+    zoom: 1; }
     .nav__menu li {
       height: 47px;
       font-size: 16px;
@@ -2827,3 +2805,40 @@ body .stickers .sticker_hit:before {
   outline: 0;
   background: transparent;
   cursor: pointer; }
+
+.compare-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  background: url(../img/icons_wish.png) no-repeat;
+  background-position: -20px -18px; }
+
+.navbar-toggle {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding: 9px 10px;
+  margin-right: 5px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: 0; }
+
+.mobile-catalog {
+  margin-top: 15px; }
+
+.navbar-toggle__text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px; }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff; }
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 5px; }

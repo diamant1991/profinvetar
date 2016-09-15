@@ -1,0 +1,174 @@
+@media (max-width: 1199px) {
+  .search {
+    width: 30%; }
+  .header__mail {
+    width: 210px; }
+  .phones {
+    width: 220px;
+    text-align: right;
+    padding-top: 10px; }
+  .button_block {
+    display: block;
+    margin-top: 15px; }
+  .wrapp_one_click {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px; }
+  .card-one-click {
+    display: inline-block; }
+  .top-panel {
+    margin-bottom: 15px; }
+  .nav__menu a {
+    padding: 12px 10px; }
+  .catalog-list__name {
+    margin-bottom: 20px; }
+  .hits-item {
+    padding-bottom: 15px; } }
+
+@media (min-width: 992px) {
+  .visible-sm {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .hidden-sm {
+    display: none; }
+  .category__item {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top; }
+  .tabs-body table {
+    width: 100%; }
+  .card-slider {
+    margin-bottom: 20px;
+    text-align: center; }
+  .card-info {
+    padding-left: 0; }
+  .similar-item {
+    padding-bottom: 15px; }
+  .top-panel {
+    margin-bottom: 35px; }
+  .wrapper__inner {
+    padding-left: 0;
+    min-height: inherit !important; }
+  .footer-logo {
+    width: 220px; } }
+
+@media (min-width: 768px) {
+  .visible-xs {
+    display: none; }
+  .nav__menu.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none; }
+  .inner-catalog {
+    margin-left: -10px; }
+  .inner-catalog__item {
+    padding-left: 25px; }
+  .inner-catalog__item:nth-child(3n+1) {
+    clear: none; }
+  .inner-catalog__item:nth-child(2n+1) {
+    clear: both; }
+  .category__item {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top; }
+  .filter__item .pull-left,
+  .filter__item .pull-right {
+    float: none !important; }
+  .sorting {
+    margin-bottom: 15px; }
+  .range-input {
+    margin-top: 20px; }
+  .nav__menu {
+    clear: both; }
+  .footer-wrapp {
+    display: block;
+    padding: 0 10px;
+    text-align: center; }
+  .card-info__item .pull-left,
+  .card-info__item .pull-right {
+    float: none !important; }
+  .footer-logo {
+    width: 100%; }
+  .phone_wrap .phone_text {
+    padding: 0; }
+  .phones {
+    width: 100%;
+    text-align: center; }
+  .pay_system_icons {
+    display: block;
+    margin-bottom: 15px; }
+  .header__mail {
+    width: 100%;
+    margin-bottom: 15px; }
+  .search {
+    width: 100%; }
+  .catalog-list__item {
+    text-align: center; }
+  .item-title {
+    font-size: 18px; }
+  .slider-text {
+    height: 250px;
+    text-align: center; }
+    .slider-text .pull-left {
+      float: none !important; }
+    .slider-text .pull-right {
+      float: none !important; }
+  .slider-descr {
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 10px; }
+  .button.wide {
+    padding: 10px; }
+  .slider-btn {
+    height: auto;
+    padding-left: 0; }
+  .thumbnail {
+    margin-left: -10px; } }
+
+@media (max-width: 500px) {
+  .top-panel {
+    display: block; }
+  .thumbnail__item {
+    padding-left: 10px; }
+  .tab-list li {
+    display: block;
+    width: 100%;
+    margin: 0; }
+  .review-carousel {
+    padding: 0; }
+    .review-carousel .owl-prev, .review-carousel .owl-next {
+      display: none; }
+  .logo {
+    width: 100%;
+    text-align: center; }
+  .add-compare {
+    margin-bottom: 15px; }
+  .phones {
+    width: 100%;
+    text-align: center; }
+  .phone_wrap .phone_text {
+    padding: 0; } }

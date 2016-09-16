@@ -1333,8 +1333,51 @@ img {
   margin-left: 10px;
   font-size: 16px; }
 
+.nav-btn {
+  width: 220px;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  display: block;
+  color: #fff;
+  padding: 12px 35px 13px 40px;
+  color: #FFF;
+  white-space: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px; }
+  .nav-btn .fa {
+    position: absolute;
+    z-index: 2;
+    right: 15px;
+    top: 50%;
+    margin-top: -8px; }
+  .nav-btn:before {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    content: "";
+    top: 12px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/ai.png) no-repeat; }
+  .nav-btn:after {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    opacity: .1; }
+
 .nav {
-  background: #67af00; }
+  background: #67af00;
+  padding-left: 220px;
+  position: relative; }
   .nav__menu {
     text-align: justify;
     list-style-type: none;
@@ -1349,7 +1392,7 @@ img {
     .nav__menu a {
       position: relative;
       display: block;
-      padding: 12px 35px 13px;
+      padding: 12px 30px 13px;
       color: #FFF;
       white-space: normal; }
       .nav__menu a:hover {
@@ -1367,10 +1410,11 @@ img {
   position: absolute;
   z-index: 5;
   left: 0;
-  top: 24px;
+  top: 0;
   padding-top: 0; }
   .sidebar__menu {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 13px; }
     .sidebar__menu > li:first-child > a {
       border-top: 1px solid #eaebec; }
     .sidebar__menu > li > a {
@@ -2324,7 +2368,8 @@ body .stickers .sticker_hit:before {
     border: 2px solid transparent; }
 
 .card-slider {
-  padding-right: 10px; }
+  padding-right: 10px;
+  position: relative; }
 
 .card-info {
   padding-left: 10px; }
@@ -2435,16 +2480,16 @@ body .stickers .sticker_hit:before {
   outline: 0; }
 
 .status-green {
-  padding: 5px 15px;
-  background: #67af00;
+  padding: 3px 20px;
+  background: #aedd94;
   border: 1px solid black;
-  color: #fff; }
+  color: black; }
 
 .status-red {
-  background: red;
-  padding: 5px 15px;
+  background: #ff8a84;
+  padding: 3px 20px;
   border: 1px solid black;
-  color: #fff; }
+  color: black; }
 
 .orange-color {
   color: orange; }
@@ -2842,3 +2887,60 @@ body .stickers .sticker_hit:before {
 
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 5px; }
+
+.number-block {
+  text-align: center;
+  border: 2px dashed black;
+  padding: 10px 0; }
+  .number-block__item {
+    float: left;
+    width: 20%;
+    padding: 5px; }
+  .number-block__title {
+    font-size: 24px; }
+  .number-block__text {
+    font-size: 18px; }
+
+.like_icons span i {
+  width: 26px;
+  height: 26px;
+  display: block;
+  background: url(../img/icons_wish.png) no-repeat; }
+
+.like_icons .wish_item i {
+  background-position: 3px -18px; }
+
+.like_icons .compare_item i {
+  background-position: -20px -18px; }
+
+.like_icons {
+  position: absolute;
+  z-index: 53;
+  top: 10px;
+  right: 20px; }
+
+.like_icons > div {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0 0 5px; }
+
+.like_icons span {
+  display: block;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #fff;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  margin: 0 0 5px;
+  overflow: hidden; }
+  .like_icons span:hover {
+    cursor: pointer;
+    background-color: #e3e3e3; }
+
+.like_icons .wish_item:hover i {
+  background-position: 3px -74px; }
+
+.like_icons .compare_item:hover i {
+  background-position: -20px -74px; }

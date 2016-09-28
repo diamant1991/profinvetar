@@ -8,6 +8,8 @@
     width: 30%; }
   .header__mail {
     width: 210px; }
+  .nav__menu {
+    width: 610px; }
   .phones {
     width: 220px;
     text-align: right;
@@ -39,6 +41,15 @@
 @media (max-width: 991px) {
   .hidden-sm {
     display: none; }
+  .nav__menu_cat > li > a {
+    padding-left: 25px;
+    padding-right: 25px; }
+  .search {
+    width: 100%; }
+  .header {
+    padding-bottom: 0; }
+  .nav__menu {
+    width: 100%; }
   .nav {
     padding-left: 0; }
   .category__item {
@@ -92,8 +103,15 @@
 @media (max-width: 767px) {
   .hidden-xs {
     display: none; }
+  .header-profile {
+    float: none;
+    padding-right: 0; }
+  .header-right {
+    padding-top: 0; }
   .number-block__item {
     width: 100%; }
+  .phones {
+    border-left: 0; }
   .inner-catalog {
     margin-left: -10px; }
   .inner-catalog__item {
@@ -163,6 +181,10 @@
 @media (max-width: 500px) {
   .top-panel {
     display: block; }
+  .header-profile__item {
+    text-align: center; }
+  .logo {
+    padding-top: 20px; }
   .thumbnail__item {
     padding-left: 10px; }
   .tab-list li {

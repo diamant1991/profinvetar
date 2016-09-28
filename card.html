@@ -17,104 +17,102 @@
 <body>
   <div class="wrapper container">
     <header class="header">
-    	<div class="top-panel">
-    		<div class="logo">
-    			<a href="#">
-    				<img src="img/logo.png" alt="">
-    			</a>
-    		</div>
-    		<div class="logo-text hidden-sm">
-    			УБорочная техника, оборудование и инвентарь для клининга
-    		</div>
-    		<div class="phones">
-    			<span class="phone_wrap">
-    				<span class="phone">
-    					<span class="icons fa fa-phone hidden-xs"></span>
-    					<span class="phone_text">
-    						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
-    						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														
-    					</span>
-    				</span>
-    				<span class="header__time middle">
-    					<div class="time-info">c 9:00 до 18:00 ПН-ПТ</div>
-    					<a href="#" class="get-call">Заказать звонок</a>
-    				</span>
-    			</span>
-    		</div>
-    	</div>
-    	<div class="bottom-panel">
-    		<div class="header__mail hidden-xs">
-    			<div class="input-group"> 
-    				<span class="input-group-addon">
-    					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-    				</span> 
-    				<input class="form-control" placeholder="info@profinventar.ru"> 
-    			</div>
-    		</div>
-    		<div class="search hidden-xs">
-    				<div id="title-search" class="stitle_form">
-    				<form action="">
-    					<div class="form-control1 bg">
-    						<input id="title-searchs-input" type="text" name="q" value="" class="search__input small_block" placeholder="Быстрый поиск по каталогу">
-    						<input name="s" type="submit" value="" class="search__submit">
-    					</div>
-    				</form>
-    			</div>
-    		</div>
-    		<div class="header__compare">
-    			<a href="#" class="header-btn">
-    				<i class="compare-icon"></i>
-    				<div>Сравнение</div>
-    			</a>
-    		</div>
-    		<div class="header__favorites">
-    			<a href="#" class="header-btn">
-    				<div class="favorites-icon">
-    					<i class="fa fa-heart-o" aria-hidden="true"></i>
-    					<span class="favorites-count">2</span>
+    	<div class="container">
+    		<div class="top-panel">
+    			<div class="logo">
+    				<div class="logo__item">
+    					<a href="#">
+    						<img src="img/logo.png" alt="">
+    					</a>
     				</div>
-    				<div>Изранное</div>
-    			</a>
-    		</div>
-    		<div class="header__basket">
-    			<a href="#" class="basket-btn">
-    				<span class="middle">
-    					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-    				</span>
-    				<span class="middle basket-text">
-    					<span class="hidden-sm">Ваша корзина</span> 
-    					(0)
-    				</span>
-    			</a>
+    				<a href="#" class="email-info">
+    					<span class="middle email-info__icon">
+    						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+    					</span>
+    					<span class="middle">info@profinventar.ru</span>
+    				</a>
+    			</div>
+    			<div class="logo-text hidden-sm">
+    				УБорочная техника, оборудование и инвентарь для клининга
+    			</div>
+    			<div class="header-right clearfix">
+    				<div class="header-profile">
+    					<div class="header-profile__item">
+    						<a href="#" class="header-profile__link">
+    							<span class="middle header-profile__icon">
+    								<i class="fa fa-heart-o" aria-hidden="true"></i>
+    							</span>
+    							<span class="middle">Избранное</span>
+    						</a>
+    					</div>
+    					<div class="header-profile__item">
+    						<a href="#" class="header-profile__link">
+    							<span class="middle header-profile__icon">
+    								<i class="fa fa-balance-scale" aria-hidden="true"></i>
+    							</span>
+    							<span class="middle">Сравнение</span>
+    						</a>
+    					</div>
+    					<div class="header-profile__item">
+    						<a href="#" class="header-profile__link basket-link">
+    							<span class="middle header-profile__icon">
+    								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    							</span>
+    							<span class="middle basket-link__text">Корзина (2)</span>
+    						</a>
+    					</div>
+    				</div>
+    				<div class="phones">
+    					<span class="phone_wrap">
+    						<div class="time-info">c 9:00 до 18:00 ПН-ПТ</div>
+    						<div class="phone">
+    							<span class="icons fa fa-phone hidden-xs"></span>
+    							<span class="phone_text">
+    								<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
+    								<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														
+    							</span>
+    						</div>
+    						<div class="header__time">
+    							<a href="#" class="get-call" data-toggle="modal" data-target="#myModal">Заказать звонок</a>
+    						</div>
+    					</span>
+    				</div>
+    			</div>
     		</div>
     	</div>
     </header>
     <nav class="nav clearfix">
-    	<button class="navbar-toggle visible-xs" type="button">
-    		<div class="navbar-toggle__text pull-left">Меню</div> 
-    		<div class="navbar-toggle__icon pull-right">	
-    			<span class="icon-bar"></span> 
-    			<span class="icon-bar"></span> 
-    			<span class="icon-bar"></span> 
+    	<div class="container">
+    		<div class="search hidden-xs">
+    			<form action="">
+    				<input type="search" class="search__input" placeholder="Быстрый поиск по каталогу">
+    				<button type="submit" class="search__submit">
+    					<i class="fa fa-search" aria-hidden="true"></i>
+    				</button>
+    			</form>
     		</div>
-    	</button>
-    	<ul class="nav__menu flex hidden-xs" id="menu">
-    		<li><a href="#">О компании</a></li>
-    		<li><a href="#">Доставка</a></li>
-    		<li><a href="#">Оплата</a></li>
-    		<li><a href="#">Прайс</a></li>
-    		<li><a href="#">Клининг</a></li>
-    		<li><a href="#">Статьи</a></li>
-    		<li><a href="#">Контакты</a></li>
-    	</ul>
-    	<a href="#" class="nav-btn hidden-sm">
-    		Каталог
-    		<i class="fa fa-angle-down"></i>
-    	</a>
+    		<button class="navbar-toggle visible-xs" type="button">
+    			<div class="navbar-toggle__text pull-left">Меню</div> 
+    			<div class="navbar-toggle__icon pull-right">	
+    				<span class="icon-bar"></span> 
+    				<span class="icon-bar"></span> 
+    				<span class="icon-bar"></span> 
+    			</div>
+    		</button>
+    		<ul class="nav__menu flex clearfix hidden-xs" id="menu">
+    			<li><a href="#">О компании</a></li>
+    			<li><a href="#">Доставка</a></li>
+    			<li><a href="#">Оплата</a></li>
+    			<li><a href="#">Прайс</a></li>
+    			<li><a href="#">Клининг</a></li>
+    			<li><a href="#">Статьи</a></li>
+    			<li><a href="#">Контакты</a></li>
+    		</ul>
+    	</div>
     </nav>
     
     <nav class="nav mobile-catalog visible-sm clearfix">
-    	<button class="navbar-toggle" type="button">
+    	<button class="navbar-toggle cat-toggle" type="button">
     		<div class="navbar-toggle__text pull-left">Каталог</div> 
     		<div class="navbar-toggle__icon pull-right">	
     			<span class="icon-bar"></span> 
@@ -122,7 +120,7 @@
     			<span class="icon-bar"></span> 
     		</div>
     	</button>
-    	<ul class="nav__menu hidden-sm" id="catalog">
+    	<ul class="nav__menu nav__menu_cat hidden-sm" id="catalog">
     		<li><a href="#">Уборочный инвентарь</a></li>
     		<li><a href="#">Уборочное оборудование</a></li>
     	</ul>
@@ -788,6 +786,35 @@
   		</div>
   	</div>
   </footer>
+  
+  <!-- Modal -->
+  <div class="modal modal-call fade" id="myModal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Заказать звонок</h4>
+        </div>
+        <div class="modal-body">
+        	<form action="">
+        		<div class="form-group">
+        			<label for="">Имя</label>
+        			<input type="text" class="form-control">
+        		</div>
+        		<div class="form-group">
+        			<label for="">Телефон</label>
+        			<input type="text" class="form-control">
+        		</div>
+        		<div class="form-group">
+        			<button type="submit" class="btn btn-submit">
+        				Отправить
+        			</button>	
+        		</div>
+        	</form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade" id="modal" role="dialog">
     <div class="modal-dialog" role="document">

@@ -6,6 +6,8 @@
 @media (max-width: 1199px) {
   .search {
     width: 30%; }
+  .authorization-cols .auth-title {
+    font-size: 18px; }
   .header__mail {
     width: 210px; }
   .nav__menu {

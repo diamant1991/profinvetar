@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Авторизация</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+  <![endif]-->
+</head>
+<body>
+  <header class="header">
+  	<div class="container">
+  		<div class="top-panel">
+  			<div class="logo">
+  				<div class="logo__item">
+  					<a href="#">
+  						<img src="img/logo.png" alt="">
+  					</a>
+  				</div>
+  				<a href="#" class="email-info">
+  					<span class="middle email-info__icon">
+  						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+  					</span>
+  					<span class="middle">info@profinventar.ru</span>
+  				</a>
+  			</div>
+  			<div class="logo-text hidden-sm">
+  				УБорочная техника, оборудование и инвентарь для клининга
+  			</div>
+  			<div class="header-right clearfix">
+  				<div class="header-profile">
+  					<div class="header-profile__item">
+  						<a href="#" class="header-profile__link">
+  							<span class="middle header-profile__icon">
+  								<i class="fa fa-heart-o" aria-hidden="true"></i>
+  							</span>
+  							<span class="middle">Избранное</span>
+  						</a>
+  					</div>
+  					<div class="header-profile__item">
+  						<a href="#" class="header-profile__link">
+  							<span class="middle header-profile__icon">
+  								<i class="fa fa-balance-scale" aria-hidden="true"></i>
+  							</span>
+  							<span class="middle">Сравнение</span>
+  						</a>
+  					</div>
+  					<div class="header-profile__item">
+  						<a href="#" class="header-profile__link basket-link">
+  							<span class="middle header-profile__icon">
+  								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+  							</span>
+  							<span class="middle basket-link__text">Корзина (2)</span>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="phones">
+  					<span class="phone_wrap">
+  						<div class="time-info">c 9:00 до 18:00 ПН-ПТ</div>
+  						<div class="phone">
+  							<span class="icons fa fa-phone hidden-xs"></span>
+  							<span class="phone_text">
+  								<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
+  								<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														
+  							</span>
+  						</div>
+  						<div class="header__time">
+  							<a href="#" class="get-call" data-toggle="modal" data-target="#myModal">Заказать звонок</a>
+  						</div>
+  					</span>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </header>
+  <nav class="nav clearfix">
+  	<div class="container">
+  		<div class="search hidden-xs">
+  			<form action="">
+  				<input type="search" class="search__input" placeholder="Быстрый поиск по каталогу">
+  				<button type="submit" class="search__submit">
+  					<i class="fa fa-search" aria-hidden="true"></i>
+  				</button>
+  			</form>
+  		</div>
+  		<button class="navbar-toggle visible-xs" type="button">
+  			<div class="navbar-toggle__text pull-left">Меню</div> 
+  			<div class="navbar-toggle__icon pull-right">	
+  				<span class="icon-bar"></span> 
+  				<span class="icon-bar"></span> 
+  				<span class="icon-bar"></span> 
+  			</div>
+  		</button>
+  		<ul class="nav__menu flex clearfix hidden-xs" id="menu">
+  			<li><a href="#">О компании</a></li>
+  			<li><a href="#">Доставка</a></li>
+  			<li><a href="#">Оплата</a></li>
+  			<li><a href="#">Прайс</a></li>
+  			<li><a href="#">Клининг</a></li>
+  			<li><a href="#">Статьи</a></li>
+  			<li><a href="#">Контакты</a></li>
+  		</ul>
+  	</div>
+  </nav>
+  
+  <nav class="nav mobile-catalog visible-sm clearfix">
+  	<button class="navbar-toggle cat-toggle" type="button">
+  		<div class="navbar-toggle__text pull-left">Каталог</div> 
+  		<div class="navbar-toggle__icon pull-right">	
+  			<span class="icon-bar"></span> 
+  			<span class="icon-bar"></span> 
+  			<span class="icon-bar"></span> 
+  		</div>
+  	</button>
+  	<ul class="nav__menu nav__menu_cat hidden-sm" id="catalog">
+  		<li><a href="#">Уборочный инвентарь</a></li>
+  		<li><a href="#">Уборочное оборудование</a></li>
+  	</ul>
+  </nav>
+  <div class="wrapper container">
+    <div class="wrapper__inner clearfix">
+      <aside class="sidebar hidden-sm">
+        <ul class="sidebar__menu">
+          <li>
+            <a href="#">
+              <span class="table-cell cat-icon">
+                <img src="img/inventar.png" alt="Уборочный инвентарь" title="Уборочный инвентарь">
+              </span>
+              <span class="table-cell">Уборочный инвентарь</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="table-cell cat-icon">
+                <img src="img/oborudovanie.png" alt="Уборочное оборудование" title="Уборочное оборудование">
+              </span>
+              <span class="table-cell">Уборочное оборудование</span>
+            </a>
+          </li>
+        </ul>
+        <div class="subscribe_wrap">
+          <div class="subscribe-form" id="subscribe-form">
+            <div class="wrap_bg">
+              <div class="top_block box-sizing">
+                <div class="text">
+                  <div class="title">Будьте всегда в курсе!</div>
+                  <div class="more">Узнавайте о скидках и акциях первым</div>
+                </div>
+              </div>
+              <form class="sform box-sizing">
+                <div class="email_wrap">
+                  <input type="email" class="input-item" value="" placeholder="Ваш e-mail">
+                  <input type="submit" name="OK" class="button send_btn" value="">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="news_blocks front">
+          <div class="top_block">
+            <div class="title_block">Новости</div>
+            <a href="#">Все новости</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="info_block">
+            <div class="news_items">
+              <div class="item box-sizing dl">
+                <div class="info">
+                  <div class="date">5 Июня 2016</div>
+                  <a class="name dark_link" href="#">Новое восприятие мира от Google</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="info">
+                  <div class="date">1 Мая 2016</div>
+                  <a class="name dark_link" href="#">Переводчик с кошачьего – это реально</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="info">
+                  <div class="date">1 Мая 2016</div>
+                  <a class="name dark_link" href="#">Переводчик с кошачьего – это реально</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news_blocks front">
+          <div class="top_block">
+            <div class="title_block">Статьи</div>
+            <a href="/info/articles/">Все статьи</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="info_block">
+            <div class="news_items">
+              <div class="item box-sizing dl">
+                <div class="image">
+                  <a href="#">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <a class="name dark_link" href="#">Обзор 10 лучших велосипедных брендов</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="image">
+                  <a href="#">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <a class="name dark_link" href="#">Обзор 10 лучших велосипедных брендов</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="item box-sizing dl">
+                <div class="image">
+                  <a href="#">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <a class="name dark_link" href="#">Обзор 10 лучших велосипедных брендов</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- end sidebar -->
+      <div class="center-content">
+        <div class="breadcrumb">
+          <a href="#" title="Главная">
+            <span>Главная</span>
+          </a>
+          <span class="separator">-</span>
+          <a href="#"  title="Каталог">
+            <span>Каталог</span>
+          </a>
+        </div>
+        <div class="item-title">Авторизация</div>
+        <div class="module-authorization">
+          <div class="authorization-cols clearfix">
+            <div class="col-sm-6">
+              <div class="row auth-item">
+                <div class="auth-title">Я зарегистрированный пользователь</div>
+                <div class="form-block">
+                  <form action="">
+                    <div class="form-group">
+                      <label class="label-item">
+                        E-mail
+                      </label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label class="label-item">
+                        Пароль
+                      </label>
+                      <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group clearfix">
+                      <div class="pull-left">
+                        <div class="checkbox-item">
+                          <input type="checkbox" class="checkbox" id="checkbox">
+                          <label for="checkbox">Запомнить меня</label>
+                        </div>
+                      </div>
+                      <div class="pull-right">
+                        <a class="forgot green-color" href="#">Забыли пароль?</a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="buttons">
+                        <button type="submit" class="submit-btn" name="Login">
+                          <span>Войти</span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="soc-avt">      
+                    Войти как пользователь:
+                    <div class="social-item">
+                      <a href="#">
+                        <i class="soc-icon vkontakte" title="vkontakte" alt="vkontakte"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row auth-item">
+                <div class="auth-title">Я новый пользователь</div>
+                  <div class="register-link">
+                    <a href="#" class="submit-btn">Зарегестрироватся</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  	<div class="container">
+  		<div class="row">
+  			<div class="footer-wrapp">
+  				<div class="footer-logo">
+  					<a href="#">
+  						<img src="img/logo.png" alt="">
+  					</a>
+  					<span class="pay_system_icons">
+  						<i alt="MasterCard" title="MasterCard" class="mastercard"></i>
+  						<i alt="Visa" title="Visa" class="visa"></i>
+  						<i alt="Яндекс.Деньги" title="Яндекс.Деньги" class="yandex_money"></i>
+  						<i alt="WebMoney" title="WebMoney" class="webmoney"></i>
+  						<i alt="Qiwi" title="Qiwi" class="qiwi"></i>
+  					</span>
+  				</div>
+  				<div class="footer-item">
+  					<h5><b>Компания</b></h5>
+  					<ul class="footer-menu">
+  						<li><a href="#">Список 1</a></li>
+  						<li><a href="#">Список 2</a></li>
+  						<li><a href="#">Список 3</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-item">
+  					<h5><b>Информация</b></h5>
+  					<ul class="footer-menu">
+  						<li><a href="#">Список 1</a></li>
+  						<li><a href="#">Список 2</a></li>
+  						<li><a href="#">Список 3</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-item">
+  					<h5><b>Помощь</b></h5>
+  					<ul class="footer-menu">
+  						<li><a href="#">Список 1</a></li>
+  						<li><a href="#">Список 2</a></li>
+  						<li><a href="#">Список 3</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-tel">
+  					<div class="phones">
+  						<div class="phone_wrap">
+  							<div class="phone">
+  		  					<div class="icons fa fa-phone hidden-xs"></div>
+  		  					<div class="phone_text">
+  		  						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>
+  		  						<a href="tel:+7 000 000-00-00" rel="nofollow">+7 (499) 519-02-52</a>														
+  		  					</div>
+  		  				</div>
+  						</div>
+  						<div class="footer-call">
+  							<a href="#" class="get-call">Заказать звонок</a>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </footer>
+  
+  <!-- Modal -->
+  <div class="modal modal-call fade" id="myModal" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Заказать звонок</h4>
+        </div>
+        <div class="modal-body">
+        	<form action="">
+        		<div class="form-group">
+        			<label for="">Имя</label>
+        			<input type="text" class="form-control">
+        		</div>
+        		<div class="form-group">
+        			<label for="">Телефон</label>
+        			<input type="text" class="form-control">
+        		</div>
+        		<div class="form-group">
+        			<button type="submit" class="btn btn-submit">
+        				Отправить
+        			</button>	
+        		</div>
+        	</form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

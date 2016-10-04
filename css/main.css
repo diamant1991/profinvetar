@@ -3239,3 +3239,89 @@ blockquote {
 
 .contacts-btn {
   margin-top: 20px; }
+
+.compare {
+  overflow: auto; }
+  .compare__item {
+    width: 230px;
+    float: left; }
+    .compare__item:last-child .compare__value {
+      border-right: 1px solid #e5e5e5; }
+  .compare__img {
+    height: 170px;
+    overflow: hidden;
+    text-align: center;
+    position: relative; }
+  .compare__name {
+    font-weight: 500;
+    padding: 14px 0 0;
+    height: 53px;
+    overflow: hidden; }
+    .compare__name a {
+      color: #67af00; }
+  .compare__price {
+    margin: 10px 5px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 70px; }
+  .compare__value {
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    border-bottom: 0;
+    height: 50px;
+    padding: 0 10px;
+    color: #6d6d6d;
+    font-size: 13px;
+    overflow: hidden; }
+    .compare__value:last-child {
+      border-bottom: 1px solid #e5e5e5; }
+    .compare__value a {
+      color: #67af00; }
+
+.compare-wrapp {
+  position: relative;
+  padding-left: 230px; }
+
+.compare-left {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 318px;
+  width: 230px; }
+  .compare-left .compare__value {
+    color: #383838; }
+
+.remove {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  right: 10px; }
+  .remove:hover i {
+    background-color: #67af00;
+    background-position: -17px -23px; }
+  .remove i {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+    background: url(../img/close_icons.png) 3px -23px no-repeat; }
+
+.compare-top {
+  position: relative; }
+
+.wrap_remove_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer; }
+
+.remove_all_compare {
+  color: #6d6d6d;
+  border: 1px solid #ddd;
+  background: 0 0;
+  padding: 8px 11px 9px;
+  display: inline-block; }

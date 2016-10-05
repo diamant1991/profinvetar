@@ -6,6 +6,10 @@
 @media (max-width: 1199px) {
   .search {
     width: 30%; }
+  .logo-text {
+    max-width: 275px;
+    padding-top: 45px;
+    font-size: 14px; }
   .authorization-cols .auth-title {
     font-size: 18px; }
   .header__mail {
@@ -43,6 +47,8 @@
 @media (max-width: 991px) {
   .hidden-sm {
     display: none; }
+  .nav-wrapp {
+    padding-left: 0; }
   .nav__menu_cat > li > a {
     padding-left: 25px;
     padding-right: 25px; }
@@ -105,6 +111,8 @@
 @media (max-width: 767px) {
   .hidden-xs {
     display: none; }
+  .nav__menu li {
+    font-size: 16px; }
   .compare-wrapp {
     padding-left: 100px; }
   .compare-left {

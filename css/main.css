@@ -1162,13 +1162,13 @@ img {
   height: auto; }
 
 .logo-text {
-  max-width: 295px;
+  max-width: 350px;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 23px;
-  padding-top: 65px; }
+  padding-top: 45px; }
 
 .input-group {
   position: relative;
@@ -1248,7 +1248,7 @@ img {
 
 .search {
   float: right;
-  width: 320px;
+  width: 185px;
   position: relative;
   margin: 8px 0; }
   .search__input {
@@ -1400,21 +1400,26 @@ img {
     zoom: 1; }
     .nav__menu li {
       height: 47px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
-      line-height: 22px; }
+      line-height: 1.2; }
     .nav__menu a {
       position: relative;
       display: block;
-      padding: 12px 10px 13px;
+      padding: 0 10px;
+      height: 47px;
       color: #FFF;
       white-space: normal; }
       .nav__menu a:hover {
         background: #76c800; }
 
+.nav-wrapp {
+  position: relative;
+  padding-left: 220px; }
+
 .nav__menu {
   float: left;
-  width: 670px; }
+  width: 715px; }
 
 .wrapper__inner {
   padding: 25px 0;
@@ -2286,8 +2291,6 @@ body .stickers .sticker_hit:before {
 .filter-range-input {
   width: 100px;
   height: 30px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
   padding: 0 10px;
   outline: 0;
   border: 0;
@@ -2319,7 +2322,6 @@ body .stickers .sticker_hit:before {
 .filter-btn {
   display: inline-block;
   padding: 5px 15px;
-  border: 1px solid black;
   background: #67af00;
   color: #fff;
   outline: 0; }
@@ -2349,8 +2351,6 @@ body .stickers .sticker_hit:before {
   background: orange;
   color: #fff;
   padding: 10px 20px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
   margin-left: 3px; }
 
 .catalog-price {
@@ -2362,7 +2362,6 @@ body .stickers .sticker_hit:before {
     display: inline-block;
     background: #67af00;
     color: #fff;
-    border: 1px solid black;
     padding: 5px 20px; }
 
 .view-more {
@@ -3325,3 +3324,19 @@ blockquote {
   background: 0 0;
   padding: 8px 11px 9px;
   display: inline-block; }
+
+.footer-develop {
+  text-align: right; }
+
+.footer-bottom {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  margin-top: 20px; }
+
+.similar-title {
+  margin-bottom: 20px; }
+
+.filter-wrapp {
+  border: 1px solid #eaebec;
+  margin-bottom: 15px;
+  padding: 10px; }

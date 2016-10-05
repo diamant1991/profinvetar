@@ -84,31 +84,93 @@
     </header>
     <nav class="nav clearfix">
     	<div class="container">
-    		<div class="search hidden-xs">
-    			<form action="">
-    				<input type="search" class="search__input" placeholder="Быстрый поиск по каталогу">
-    				<button type="submit" class="search__submit">
-    					<i class="fa fa-search" aria-hidden="true"></i>
-    				</button>
-    			</form>
-    		</div>
-    		<button class="navbar-toggle visible-xs" type="button">
-    			<div class="navbar-toggle__text pull-left">Меню</div> 
-    			<div class="navbar-toggle__icon pull-right">	
-    				<span class="icon-bar"></span> 
-    				<span class="icon-bar"></span> 
-    				<span class="icon-bar"></span> 
+    		<div class="nav-wrapp">
+    			<a href="#" class="nav-btn hidden-sm">
+    				Каталог
+    				<i class="fa fa-angle-down" aria-hidden="true"></i>
+    			</a>
+    			<div class="search hidden-xs">
+    				<form action="">
+    					<input type="search" class="search__input" placeholder="Быстрый поиск по каталогу">
+    					<button type="submit" class="search__submit">
+    						<i class="fa fa-search" aria-hidden="true"></i>
+    					</button>
+    				</form>
     			</div>
-    		</button>
-    		<ul class="nav__menu flex clearfix hidden-xs" id="menu">
-    			<li><a href="#">О компании</a></li>
-    			<li><a href="#">Доставка</a></li>
-    			<li><a href="#">Оплата</a></li>
-    			<li><a href="#">Прайс</a></li>
-    			<li><a href="#">Клининг</a></li>
-    			<li><a href="#">Статьи</a></li>
-    			<li><a href="#">Контакты</a></li>
-    		</ul>
+    			<button class="navbar-toggle visible-xs" type="button">
+    				<div class="navbar-toggle__text pull-left">Меню</div> 
+    				<div class="navbar-toggle__icon pull-right">	
+    					<span class="icon-bar"></span> 
+    					<span class="icon-bar"></span> 
+    					<span class="icon-bar"></span> 
+    				</div>
+    			</button>
+    			<ul class="nav__menu flex clearfix hidden-xs" id="menu">
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Главная</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">О компании</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Доставка / оплата</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Аренда оборудования</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Ремонт</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Клининг</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Прайс</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Статьи</div>
+    						</div>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<div class="table-block">
+    							<div class="block-vertical">Контакты</div>
+    						</div>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
     	</div>
     </nav>
     
@@ -257,8 +319,9 @@
           </a>
         </div>
         <h2>Поломоечные машины</h2>
-        <div class="item-title mrg-bot-10">Категории:</div>
-        <div class="category">
+        <div class="filter-wrapp">
+          <div class="item-title mrg-bot-10">Категории:</div>
+          <div class="category">
           <a href="#" class="category__item">
             Категория 1 (20 шт.)
           </a>
@@ -336,6 +399,8 @@
             </div>
           </div>
         </div>
+        </div>
+        
         <!-- end filter -->
         <div class="hits-wrapp clearfix">
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -909,6 +974,22 @@
   						</div>
   						<div class="footer-call">
   							<a href="#" class="get-call">Заказать звонок</a>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="footer-bottom clearfix">
+  				<div class="col-sm-6">
+  					<div class="row">
+  						<div class="copyright">
+  							2009 - 2016 @Профинвентарь - уборочная техника, оборудование и инвентарь для клининга
+  						</div>
+  					</div>
+  				</div>
+  				<div class="col-sm-6">
+  					<div class="row">
+  						<div class="footer-develop">
+  							Идея и реализация
   						</div>
   					</div>
   				</div>

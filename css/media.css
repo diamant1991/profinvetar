@@ -111,6 +111,12 @@
 @media (max-width: 767px) {
   .hidden-xs {
     display: none; }
+  .footer-bottom {
+    text-align: center;
+    padding: 10px; }
+  .footer-develop {
+    text-align: center;
+    margin-top: 15px; }
   .nav__menu li {
     font-size: 16px; }
   .compare-wrapp {
@@ -153,6 +159,11 @@
     display: block;
     padding: 0 10px;
     text-align: center; }
+    .footer-wrapp:after {
+      clear: both;
+      content: "";
+      display: block;
+      height: 0; }
   .card-info__item .pull-left,
   .card-info__item .pull-right {
     float: none !important; }

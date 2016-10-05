@@ -3331,7 +3331,8 @@ blockquote {
 .footer-bottom {
   border-top: 1px solid black;
   padding: 20px 0;
-  margin-top: 20px; }
+  margin-top: 20px;
+  clear: both; }
 
 .similar-title {
   margin-bottom: 20px; }
@@ -3340,3 +3341,7 @@ blockquote {
   border: 1px solid #eaebec;
   margin-bottom: 15px;
   padding: 10px; }
+
+.footer-develop__icon {
+  width: 110px;
+  margin-left: 5px; }
